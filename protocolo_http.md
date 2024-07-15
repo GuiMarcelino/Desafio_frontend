@@ -72,6 +72,29 @@ uma resposta http consiste em:
 - **5xx (erro do servidor)**: o servidor falhou ao completar a solicitação.
     - 500 internal server error: erro genérico do servidor.
 
+## Cookies
+
+### O que são Cookies?
+
+Cookies são pequenos arquivos de dados que são armazenados no navegador do usuário. Eles são utilizados para guardar informações sobre a interação do usuário com um site, permitindo que o site "lembre" dessas informações em visitas futuras.
+
+### Tipos de Cookies
+
+- **Cookies de Sessão**: Armazenados temporariamente no navegador e são apagados quando o navegador é fechado.
+- **Cookies Persistentes**: Permanecem no dispositivo do usuário por um período especificado, mesmo após o navegador ser fechado.
+
+### Uso dos Cookies
+
+- **Autenticação**: Armazenam informações de login para que o usuário não precise se autenticar novamente.
+- **Preferências do Usuário**: Guardam preferências, como tema ou idioma.
+- **Rastreamento**: Monitoram o comportamento do usuário para fins de análise e marketing.
+
+#### Exemplo de Cabeçalho de Resposta com Cookie
+
+```http
+Set-Cookie: nome=valor; Expires=Wed, 21 Oct 2021 07:28:00 GMT; Path=/; Secure; HttpOnly
+```
+
 ## conclusão
 
 http é a base da comunicação na web, permitindo a transferência de documentos de hipertexto e a interação entre clientes e servidores. compreender seu funcionamento é essencial para o desenvolvimento web eficiente e seguro.
